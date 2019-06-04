@@ -29,7 +29,7 @@ module.exports = new CSSPluginBase(function compile(style, address, opts) {
           entryPath: filename.replace(/[^/\\]*$/, ""),
           currentDirectory: filename.replace(/[^/\\]*$/, "")
         },
-
+        javascriptEnabled: opts.javascriptEnabled,
         sourceMap: loader.builder && {
           sourceMapBasepath: filename.replace(/[^/]+$/, '')
         },
